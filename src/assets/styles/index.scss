@@ -1,0 +1,8 @@
+// index
+
+@import './normalize';
+@import './globals';
+@import './defaults';
+
+// glob importer
+@import '../../{components,pages,content}/**/*.scss';

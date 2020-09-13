@@ -1,0 +1,79 @@
+// header
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5em;
+
+  &__logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    background: none;
+    border: none;
+    color: $fg;
+
+    .material-icons {
+      color: var(--orange);
+    }
+
+    &-text {
+      font-size: 1.25em;
+    }
+  }
+
+  &__navigation {
+    margin-right: 0;
+    height: 100%;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style-type: none;
+    height: 100%;
+  }
+
+  &__link {
+    height: 100%;
+  }
+
+  &__anchor {
+    height: 100%;
+    width: 5.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $fg;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &--green:hover {
+      background: var(--green);
+    }
+
+    &--blue:hover {
+      background: var(--blue);
+    }
+
+    &--orange:hover {
+      background: var(--orange);
+    }
+
+    &--purple:hover {
+      background: var(--purple);
+    }
+  }
+}
+
+.ityped-cursor {
+  font-size: 1.75rem;
+  color: var(--orange);
+}

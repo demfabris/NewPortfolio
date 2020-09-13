@@ -1,0 +1,24 @@
+// globals
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Scientifica';
+  height: 100%;
+}
+
+body {
+  background-color: var(--dark-bg0);
+  color: var(--fg0);
+  padding: 0 30em;
+}
+
+h1 {
+  margin: 0;
+}

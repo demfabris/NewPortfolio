@@ -1,0 +1,20 @@
+//portfolio
+
+.portfolio {
+  background: url('assets/img/old-portfolio.png');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: var(--light-yellow);
+    color: black;
+    height: 100%;
+    width: 100%;
+  }
+}

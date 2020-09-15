@@ -3,15 +3,11 @@
 .tile {
   display: flex;
   position: relative;
-  height: 14em;
-  border: 1px solid var(--dark-bg3);
-  margin: 2px;
+  height: 100%;
+  margin: 3px;
   transition: 0.2s ease;
   overflow: hidden;
-
-  // &:hover {
-  //   transform: scale(1.025);
-  // }
+  box-shadow: 20px 50px 30px 10px var(--dark-bg0-h);
 
   &:hover > &__overlay {
     opacity: 1;
@@ -27,5 +23,12 @@
 
   &__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .tile {
+    height: 14em !important;
+    flex: 1 !important;
   }
 }

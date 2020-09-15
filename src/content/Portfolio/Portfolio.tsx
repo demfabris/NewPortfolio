@@ -1,15 +1,22 @@
 import React from 'react'
 
 const PortfolioBase = () => {
-  return <div className="portfolio"></div>
+  return (
+    <div className="portfolio">
+      <h1 className="portfolio__title">Portfolio</h1>
+      <span className="portfolio__desc">This website is open source!</span>
+    </div>
+  )
 }
 
 const PortfolioOverlay = () => {
   return (
-    <a className="portfolio__overlay">
-      <h1 className="portfolio__overlay-title">Portfolio</h1>
-      <span>This website is open source!</span>
-    </a>
+    <div className="portfolio__overlay">
+      <a
+        className="portfolio__overlay-link"
+        href="https://github.com/fabricio7p/NewPortfolio"
+      ></a>
+    </div>
   )
 }
 

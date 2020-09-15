@@ -1,7 +1,16 @@
 import React from 'react'
 
-const Row: React.FC = ({ children }) => {
-  return <div className="row">{children}</div>
+type RowProps = {
+  children: React.ReactNode
+  size?: string
+}
+
+const Row: React.FC<RowProps> = ({ children, size }) => {
+  return (
+    <div style={{ height: size }} className="row">
+      {children}
+    </div>
+  )
 }
 
 export default Row

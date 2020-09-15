@@ -9,10 +9,12 @@ import './assets'
 const App: React.FC = () => {
   return (
     <Router>
-      <Header />
-      <Route exact path="/">
-        <pages.Main />
-      </Route>
+      <div className="wrapper">
+        <Header />
+        <Route exact path="/">
+          <pages.Main />
+        </Route>
+      </div>
     </Router>
   )
 }

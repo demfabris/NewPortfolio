@@ -20,6 +20,9 @@ const Header: React.FC = () => {
         <i className="material-icons">keyboard_arrow_right</i>
         <span className="header__logo-text" ref={logoRef}></span>
       </button>
+      <button className="header__burguer">
+        <i className="material-icons">menu</i>
+      </button>
       <nav className="header__navigation">
         <ul className="header__links">
           <li className="header__link">

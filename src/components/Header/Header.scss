@@ -29,6 +29,7 @@
   &__navigation {
     margin-right: 0;
     height: 100%;
+    transition: 0.3s ease;
   }
 
   &__links {
@@ -71,9 +72,72 @@
       background: var(--purple);
     }
   }
+
+  &__burguer {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    min-height: 4em;
+    min-width: 4em;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: $fg;
+
+    .material-icons {
+      font-size: 2em;
+    }
+
+    &:hover {
+      background: var(--dark-bg4);
+    }
+
+    &:hover + nav {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 .ityped-cursor {
   font-size: 1.75rem;
   color: var(--orange);
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    height: 10em;
+
+    &__burguer {
+      display: flex;
+      z-index: 2;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      height: 8em;
+    }
+
+    &__navigation {
+      position: fixed;
+      top: 0;
+      opacity: 0;
+      transform: translateY(-5em);
+      height: 10em;
+      background: $bg;
+
+      &:hover {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    &__anchor {
+      margin: 0;
+      height: 5em;
+    }
+  }
 }

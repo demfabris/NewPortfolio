@@ -5,6 +5,22 @@
   flex-direction: row;
   width: 100%;
   height: 14em;
-  background: var(--dark-bg0-h);
-  margin-top: 3px;
+  margin-top: 6px;
+
+  &:first-child {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+    height: 100% !important;
+    margin-top: 0px;
+
+    .tile {
+      flex: 1 !important;
+      height: 15em !important;
+    }
+  }
 }

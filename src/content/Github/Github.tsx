@@ -3,14 +3,17 @@ import React from 'react'
 const GithubBase = () => {
   return (
     <div className="github">
-      <div className="github__underlay"></div>
-      <h1 className="github__title">Find me on</h1>
-      <a
-        className="github__link"
-        href="https://github.com/fabricio7p"
-        target="_blank"
-      >
-        <b>GitHub</b>/fabricio7p
+      <h1 className="github__title">Interested in my work?</h1>
+      <span className="github__desc">Find me on GitHub.</span>
+    </div>
+  )
+}
+
+const GithubOverlay = () => {
+  return (
+    <div className="github__overlay">
+      <a className="github__overlay-link" href="https://github.com/fabricio7p">
+        github.com/<b>fabricio7p</b>
       </a>
     </div>
   )
@@ -18,4 +21,5 @@ const GithubBase = () => {
 
 export const Github = {
   base: GithubBase,
+  overlay: GithubOverlay,
 }

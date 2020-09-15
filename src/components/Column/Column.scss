@@ -1,0 +1,14 @@
+// column
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 28em;
+}
+
+@media (max-width: 700px) {
+  .column {
+    height: 100%;
+  }
+}

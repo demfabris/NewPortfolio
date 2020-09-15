@@ -1,0 +1,28 @@
+// toyfy
+
+.toyfy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: #fff;
+  color: var(--dark-bg0-h);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__desc {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  &__overlay {
+    height: 100%;
+    background: #fff url('assets/img/toyfy.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

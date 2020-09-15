@@ -1,13 +1,13 @@
-//portfolio
+// catalina frames
 
-.portfolio {
+.catalina-frames {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--light-yellow);
-  color: var(--dark-bg0-h);
-  height: 100%;
+  color: $fg;
+  background: var(--red);
 
   &__title {
     text-align: center;
@@ -16,15 +16,14 @@
   &__desc {
     font-size: 1.1em;
     text-align: center;
+    width: 90%;
   }
 
   &__overlay {
-    background: url('assets/img/portfolio.gif');
+    height: 100%;
+    background: url('assets/img/catalina.gif');
     background-size: cover;
     background-position: center;
-    text-decoration: none;
-    height: 100%;
-    width: 100%;
 
     &-link {
       position: absolute;

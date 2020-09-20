@@ -1,0 +1,8 @@
+// tech grid
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  grid-column-gap: 0.5em;
+  grid-row-gap: 0.5em;
+}

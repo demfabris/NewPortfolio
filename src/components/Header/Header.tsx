@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { init } from 'ityped'
 
 const Header: React.FC = () => {
@@ -26,22 +27,22 @@ const Header: React.FC = () => {
       <nav className="header__navigation">
         <ul className="header__links">
           <li className="header__link">
-            <a className="header__anchor header__anchor--green" href="google.com">
+            <Link className="header__anchor" to="/">
               home
-            </a>
+            </Link>
           </li>
           <li className="header__link">
-            <a className="header__anchor header__anchor--blue" href="google.com">
+            <Link className="header__anchor" to="/code">
               code
-            </a>
+            </Link>
           </li>
           <li className="header__link">
-            <a className="header__anchor header__anchor--orange" href="google.com">
+            <a className="header__anchor" href="google.com">
               About
             </a>
           </li>
           <li className="header__link">
-            <a className="header__anchor header__anchor--purple" href="google.com">
+            <a className="header__anchor" href="google.com">
               contact
             </a>
           </li>

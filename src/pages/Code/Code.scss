@@ -1,0 +1,31 @@
+// code
+
+.code {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    height: 5em;
+
+    &-btn {
+      background: none;
+      font-size: 1em;
+      color: $fg;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0 1em;
+      cursor: pointer;
+      border: none;
+      height: 100%;
+
+      &:hover {
+        color: var(--orange);
+      }
+    }
+  }
+}

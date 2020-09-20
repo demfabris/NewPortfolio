@@ -4,7 +4,11 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: ['plugin:react/recommended', 'standard', 'prettier', 'prettier/react'],
+  extends: [
+    'plugin:react/recommended',
+    'standard',
+    'plugin:prettier/recommended',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,6 +17,10 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'prettier/@typescript-eslint'],
-  rules: {},
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    'prettier/prettier': 'error',
+    'no-use-before-define': [0],
+    '@typescript-eslint/no-use-before-define': [1],
+  },
 }

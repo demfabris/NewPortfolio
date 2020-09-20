@@ -15,6 +15,7 @@ body {
 
 body {
   display: flex;
+  overflow-y: scroll;
   justify-content: center;
   background-color: var(--dark-bg0);
   color: var(--fg0);

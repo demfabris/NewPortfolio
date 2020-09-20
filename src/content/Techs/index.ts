@@ -1,0 +1,1 @@
+export { techArray } from './techArray'

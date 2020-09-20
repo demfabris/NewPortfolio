@@ -1,6 +1,7 @@
 const globImporter = require('node-sass-glob-importer')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -10,6 +11,7 @@ module.exports = {
   output: {
     path: path.resolve('build'),
     filename: '[name].bundle.js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
@@ -22,6 +24,7 @@ module.exports = {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './build',
+    historyApiFallback: true,
   },
   module: {
     rules: [
@@ -70,6 +73,9 @@ module.exports = {
       title: 'Fabricio7p',
       template: path.resolve(__dirname, 'public/index.html'),
       filename: path.resolve(__dirname, 'build/index.html'),
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{ from: 'src/assets/img/techs', to: 'assets' }],
     }),
   ],
 }

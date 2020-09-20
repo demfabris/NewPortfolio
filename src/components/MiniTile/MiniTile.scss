@@ -1,0 +1,29 @@
+// mini tile
+
+.mini-tile {
+  max-height: 8em;
+  max-width: 8em;
+  transition: 0.2s ease;
+  animation: Appear 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &__img {
+    width: 8em;
+    height: 8em;
+    background: var(--dark-bg4);
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@keyframes Appear {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}

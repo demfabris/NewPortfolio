@@ -3,7 +3,7 @@ export type Query =
   | 'frontend'
   | 'backend'
   | 'frameworks'
-  | 'web services'
+  | 'cloud'
   | 'tooling'
   | 'databases'
   | 'languages'

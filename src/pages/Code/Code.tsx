@@ -1,79 +1,47 @@
 import React, { useState } from 'react'
 import { TechGrid } from 'components'
 import { Query } from 'types/techs'
+import { techQueries } from 'content/Techs'
 
 const Code: React.FC = () => {
   const [query, setQuery] = useState<Query>('all')
 
   return (
-    <div className="code">
-      <ul className="code__menu">
-        <li className="code__menu-option">
-          <button onClick={() => setQuery('all')} className="code__menu-btn">
-            all
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('frontend')}
-            className="code__menu-btn"
-          >
-            frontend
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('backend')}
-            className="code__menu-btn"
-          >
-            backend
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('frameworks')}
-            className="code__menu-btn"
-          >
-            frameworks
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('web services')}
-            className="code__menu-btn"
-          >
-            web services
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('tooling')}
-            className="code__menu-btn"
-          >
-            tooling
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('databases')}
-            className="code__menu-btn"
-          >
-            databases
-          </button>
-        </li>
-        <li className="code__menu-option">
-          <button
-            onClick={() => setQuery('languages')}
-            className="code__menu-btn"
-          >
-            languages
-          </button>
-        </li>
-      </ul>
-      <div className="code__techs">
-        <TechGrid query={query} />
+    <>
+      <div className="code">
+        <ul className="code__menu">
+          {techQueries.map((entry, key) => (
+            <li key={key} className="code__menu-option">
+              <button
+                onClick={() => setQuery(entry)}
+                className="code__menu-btn"
+              >
+                {entry}
+              </button>
+            </li>
+          ))}
+        </ul>
+        <div className="code__techs">
+          <TechGrid query={query} />
+        </div>
       </div>
-    </div>
+      <div className="code__process">
+        <hr className="separator" />
+        <h1 className="code__process-title">code process</h1>
+        <div className="code__process-sectionwrap">
+          <span className="code__process-quote">
+            "Bad code is code you wrote 6 months ago..."
+          </span>
+          <p className="code__process-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et
+            tincidunt dui. Sed tincidunt leo auctor blandit pellentesque. Sed
+            eget consequat est. In nec enim erat. Nunc porttitor enim eu finibus
+            dignissim. Vivamus venenatis enim purus, quis dictum mi facilisis
+            ut.
+          </p>
+        </div>
+      </div>
+    </>
   )
 }
 

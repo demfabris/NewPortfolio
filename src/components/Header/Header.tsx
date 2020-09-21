@@ -38,7 +38,7 @@ const Header: React.FC = () => {
           </li>
           <li className="header__link">
             <a className="header__anchor" href="google.com">
-              About
+              about
             </a>
           </li>
           <li className="header__link">

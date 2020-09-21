@@ -34,5 +34,11 @@
   --light-orange: #fe8019;
 }
 
+.separator {
+  border: 1px solid var(--dark-bg4);
+  width: 90%;
+  margin: 1em 0;
+}
+
 $bg: var(--dark-bg0);
 $fg: var(--fg0);

@@ -2,7 +2,13 @@
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(8, auto);
+  grid-template-columns: repeat(auto-fill, minmax(7.5em, 1fr));
   grid-column-gap: 0.5em;
-  grid-row-gap: 0.5em;
+  grid-row-gap: 0.4em;
+}
+
+@media (max-width: 700px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(4em, 1fr));
+  }
 }

@@ -7,12 +7,7 @@ interface ITech {
 
 export const techArray: ITech[] = [
   {
-    category: ['backend', 'all'],
-    imgSrc: 'assets/nodejs.png',
-    bgColor: 'var(--dark-bg0-h)',
-  },
-  {
-    category: ['web services', 'all'],
+    category: ['cloud', 'all'],
     imgSrc: 'assets/aws.png',
   },
   {
@@ -21,7 +16,7 @@ export const techArray: ITech[] = [
     bgColor: '#fff',
   },
   {
-    category: ['web services', 'all'],
+    category: ['cloud', 'all'],
     imgSrc: 'assets/google.png',
     bgColor: '#fff',
   },
@@ -44,19 +39,23 @@ export const techArray: ITech[] = [
     imgSrc: 'assets/linux.png',
   },
   {
-    category: ['all', 'frontend', 'frameworks'],
-    imgSrc: 'assets/react.png',
+    category: ['all', 'tooling', 'cloud'],
+    imgSrc: 'assets/travis.png',
+    bgColor: 'var(--dark-bg0-h)',
   },
   {
-    category: ['all', 'databases'],
-    imgSrc: 'assets/redis.png',
-    bgColor: 'var(--dark-bg0-h)',
-    objectFit: 'contain',
+    category: ['all', 'frontend', 'frameworks'],
+    imgSrc: 'assets/react.png',
   },
   {
     category: ['all', 'tooling'],
     imgSrc: 'assets/webpack.png',
     bgColor: '#fff',
+  },
+  {
+    category: ['backend', 'all'],
+    imgSrc: 'assets/nodejs.png',
+    bgColor: 'var(--dark-bg0-h)',
   },
   {
     category: ['all', 'languages'],
@@ -111,6 +110,12 @@ export const techArray: ITech[] = [
     category: ['all', 'tooling'],
     imgSrc: 'assets/numpy.png',
     bgColor: '#fff',
+  },
+  {
+    category: ['all', 'databases'],
+    imgSrc: 'assets/redis.png',
+    bgColor: 'var(--dark-bg0-h)',
+    objectFit: 'contain',
   },
   {
     category: ['all', 'backend', 'databases', 'frameworks'],

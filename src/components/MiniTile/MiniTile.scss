@@ -27,3 +27,15 @@
     transform: scale(1);
   }
 }
+
+@media (max-width: 700px) {
+  .mini-tile {
+    height: 4em;
+    width: 4em;
+
+    &__img {
+      height: 4em;
+      width: 4em;
+    }
+  }
+}
